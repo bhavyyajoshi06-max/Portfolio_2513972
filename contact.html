@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - My Biodata</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            display:flex;
+            flex-direction:column;
+            min-height:100vh;
+            background:linear-gradient(135deg,#FFF7F2,#FFEFF6,#F5ECFF);
+        }
+
+        header{
+            background:linear-gradient(360deg,#ff9966,#ff5e62);
+            color:white;
+            text-align:center;
+            
+        }
+
+        header h1{
+            font-size:36px;
+            letter-spacing:2px;
+            text-shadow:2px 2px 4px gray;
+                    }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        section{
+            flex:1;
+            padding:20px;
+            margin:20px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px lightgray;
+        }
+
+        /* Form and Video Layout */
+
+        .container{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            gap:40px;
+        }
+
+        .form-box{
+            width:60%;
+        }
+
+        .video-box{
+            width:35%;
+            text-align:center;
+        }
+
+        .video-box video{
+            width:100%;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input[type=text],
+        input[type=tel],
+        input[type=email],
+        textarea{
+            width:90%;
+            padding:8px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+            background:#ff5e62;
+            color:white;
+            border:none;
+            padding:10px 18px;
+            border-radius:5px;
+            cursor:pointer;
+            margin-right:10px;
+        }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover{
+            background:#ff9966;
+        }
+
+        .message{
+            border:2px dotted #ff5e62;
+            padding:15px;
+            margin:30px auto;
+            width:70%;
+            text-align:center;
+            border-radius:10px;
+            background:#fff8f5;
+            font-style:italic;
+            line-height:1.6;
+        }
+
+        .contact-info{
+            line-height:2;
+        }
+
+        .social-links a{
+            text-decoration:none;
+            color:#ff5e62;
+            font-weight:bold;
+        }
+
+        .social-links a:hover{
+            color:#333;
+            text-decoration:underline;
+        }
+
+        hr{
+            margin:30px 0;
+        }
+
+        footer{
+            background:linear-gradient(to right,#ff5e62,#ff9966);
+            color:white;
+            text-align:center;
+            font-size:16px;
+            letter-spacing:1px;
+            padding:5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>MY BIODATA</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="career obj&skills.html">Career & Skills</a>
+    <a href="project.html">Project Page</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+
+<h2 align="center">Contact Me</h2>
+
+<div class="container">
+
+    <!-- Contact Form -->
+
+    <div class="form-box">
+
+        <h3>Send Me a Message</h3>
+
+        <form>
+
+            <label>Full Name:</label><br>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" placeholder="+91 XXXXXXXXXX" required>
+
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email" required>
+
+            <br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+
+            <br><br>
+
+            <label>Interests:</label><br>
+
+            <input type="checkbox"> Web Development
+            <input type="checkbox"> Programming
+            <input type="checkbox"> Networking
+            <input type="checkbox"> UI Design
+
+            <br><br>
+
+            <label>Message:</label><br>
+
+            <textarea rows="5" placeholder="Write your message here..."></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+
+        </form>
+
+    </div>
+
+    <!-- Video -->
+
+    <div class="video-box">
+
+        <h3>Introduction Video</h3>
+
+        <video controls>
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+</div>
+
+<hr>
+
+<h2>Contact Information</h2>
+
+<div class="contact-info">
+
+<p><b>Email:</b>
+<a href="mailto:bhavya@example.com">bhavya@example.com</a>
+</p>
+
+<p><b>Phone:</b> +91 98765 XXXXX</p>
+
+<p><b>Address:</b> Ludhiana, Punjab, India</p>
+
+</div>
+
+<hr>
+
+<h2>Connect With Me</h2>
+
+<div class="social-links">
+
+<p>
+📧 <b>Email:</b>
+<a href="mailto:bhavya@example.com">bhavya@example.com</a>
+</p>
+
+<p>
+💻 <b>GitHub:</b>
+<a href="https://github.com/yourusername" target="_blank">
+https://github.com/yourusername
+</a>
+</p>
+
+<p>
+💼 <b>LinkedIn:</b>
+<a href="https://linkedin.com/in/yourusername" target="_blank">
+https://linkedin.com/in/yourusername
+</a>
+</p>
+
+<p>
+📷 <b>Instagram:</b>
+<a href="https://instagram.com/yourusername" target="_blank">
+https://instagram.com/yourusername
+</a>
+</p>
+
+</div>
+
+<p class="message">
+Thank you for visiting my website. Feel free to contact me if you have any questions, suggestions, or would like to connect. I will be happy to hear from you.
+</p>
+
+
+</section>
+
+<footer>
+    <p>© 2026 My Biodata | Bhavya Joshi | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

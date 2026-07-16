@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Festival Registration</title>
+</head>
+
+<body style="background-color: Beige;color: brown;font-family: Arial;">
+
+    <h1 align="center">Summer Beats Music Festival 2026</h1>
+
+    <!-- Festival Banner -->
+    <img src="images.jpg" alt="Music Festival Banner" width="300" height="250">
+
+    <!-- About the Event -->
+    <h2>About the Event</h2>
+    <p style="color: black">
+        Welcome to the Summer Beats Music Festival 2026! Enjoy an unforgettable
+        evening filled with live music, exciting performances, delicious food,
+        and entertainment. Join music lovers from across the country for an
+        amazing experience.
+    </p>
+
+    <!-- Performer List -->
+    <h2>Performers</h2>
+    <ul style="color: black">
+        <li>The Rock Stars</li>
+        <li>DJ Pulse</li>
+        <li>Melody Band</li>
+        <li>Rhythm Crew</li>
+        <li>Singer Aria</li>
+    </ul>
+
+    <!-- Registration Form -->
+    <h2>Festival Registration Form</h2>
+
+    <form style="color: black">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile"><br><br>
+
+        <label for="tickets">Number of Tickets:</label><br>
+        <input type="number" id="tickets" name="tickets" min="1" max="10"><br><br>
+
+        <label for="seat">Preferred Seat:</label><br>
+        <select id="seat" name="seat">
+            <option>Front Row</option>
+            <option>VIP</option>
+            <option>General</option>
+            <option>Balcony</option>
+        </select><br><br>
+
+        <label for="payment">Payment Method:</label><br>
+        <select id="payment" name="payment">
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+            <option>Net Banking</option>
+            <option>Cash</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</body>
+</html>

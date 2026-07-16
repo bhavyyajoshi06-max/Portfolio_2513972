@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - My Biodata</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            display:flex;
+            flex-direction:column;
+            min-height:100vh;
+            background:linear-gradient(135deg,#FFF7F2,#FFEFF6,#F5ECFF);
+        }
+
+        header{
+            background:linear-gradient(360deg,#ff9966,#ff5e62);
+            color:white;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:36px;
+            letter-spacing:2px;
+            text-shadow:2px 2px 4px gray;
+        }
+
+        nav{
+            background:#333;
+            text-align:center;
+            padding:12px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+        }
+
+        nav a:hover{
+            color:yellow;
+        }
+
+        section{
+            flex:1;
+            padding:20px;
+            margin:20px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 0 10px lightgray;
+        }
+
+        li{
+         padding:10px;
+        }
+
+        footer{
+            background:linear-gradient(to right,#ff5e62,#ff9966);
+            color:white;
+            text-align:center;
+            font-size:16px;
+            letter-spacing:1px;
+        }
+
+        /* Container for list and image */
+       .about-container{
+        display:flex;
+        justify-content:space-between;
+        align-items:flex-start;
+       }
+
+       /* Left side */
+      .details{
+       width:60%;
+      }
+
+      /* Right side */
+     .imagebox{
+      width:35%;
+      text-align:center;
+      position:relative;
+     }
+
+     /* Hyperlinks */
+    .bhavya-link, .dog-link{
+     color:#ff5e62;
+     text-decoration:none;
+     font-weight:bold;
+    }
+
+    .hover-link:hover{
+     text-decoration:underline;
+    }
+
+    .imagebox img{
+     display: none;
+     width: 200px;
+     height: 250px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px gray;
+    }
+
+    .about-container:has(.bhavya-link:hover) .bhavya-img{
+    display:block;
+}
+
+.about-container:has(.dog-link:hover) .dog-img{
+    display:block;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MY BIODATA</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="career obj&skills.html">Career & Skills</a>
+    <a href="project.html">Project Page</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<div class="details">
+
+<p>
+Hello! My name is
+<a href="#" class="bhavya-link">Bhavya Joshi</a>.
+I am a Computer Science Engineering student with a passion for technology and learning.
+</p>
+
+<h3>Personal Details</h3>
+
+<ul>
+<li>Name:
+<a href="#" class="bhavya-link">Bhavya Joshi</a>
+</li>
+
+<li>Age: 19 Years</li>
+
+<li>Qualification: B.Tech CSE Student</li>
+
+<li>
+Hobbies:
+Watching Netflix, Coding, Reading,
+Playing with my <a href="#" class="dog-link">Doggo</a>
+</li>
+
+<li>Languages: English, Hindi, Punjabi</li>
+
+</ul>
+
+</div>
+
+<div class="imagebox">
+
+<img src="bhavya.jpeg" class="bhavya-img">
+
+<img src="doggo.jpeg" class="dog-img">
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 My Biodata | Bhavya Joshi | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
